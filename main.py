@@ -178,7 +178,7 @@ def weapon_directory(state:State,weapon_choice:str,num_weapons="0")->Page:
         return sniper(state,num_weapons)
     elif weapon_choice=="rocket launcher":
         return rocket_launcher(state,num_weapons)
-    elif weapon_choice=="nuke":
+    else:
         return nuke(state,num_weapons)
         
 @route
